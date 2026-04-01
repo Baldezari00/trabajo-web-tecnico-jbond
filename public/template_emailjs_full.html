@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 30px;
+        }
+        .alert {
+            background-color: #FEF3C7;
+            border-left: 4px solid #F59E0B;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        .alert strong {
+            color: #D97706;
+            font-size: 14px;
+        }
+        .priority-badge {
+            display: inline-block;
+            background-color: #EF4444;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+        .info-block {
+            background-color: #F9FAFB;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .info-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #374151;
+            min-width: 140px;
+            font-size: 14px;
+        }
+        .info-value {
+            color: #1F2937;
+            font-size: 14px;
+            flex: 1;
+        }
+        .highlight {
+            background-color: #DBEAFE;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #1E40AF;
+        }
+        .problema-box {
+            background-color: #FFFFFF;
+            border: 2px solid #E5E7EB;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 10px;
+            font-style: italic;
+            color: #374151;
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: #F3F4F6;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #6B7280;
+        }
+        .cta-buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .btn-primary {
+            background-color: #10B981;
+            color: white;
+        }
+        .btn-call {
+            background-color: #2563EB;
+            color: white;
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📞 Nueva Consulta de Cliente</h1>
+            <p>Formulario de Contacto Completo - TechRepair.Pro</p>
+        </div>
+        
+        <div class="content">
+            <div class="alert">
+                <strong>⚡ ACCIÓN REQUERIDA:</strong> Cliente esperando respuesta en menos de 2 horas
+                {{#llamar}}
+                <span class="priority-badge">🔥 SOLICITA LLAMADA</span>
+                {{/llamar}}
+            </div>
+            
+            <div class="info-block">
+                <h2 style="margin: 0 0 15px 0; color: #1F2937; font-size: 18px;">👤 Datos del Cliente</h2>
+                
+                <div class="info-row">
+                    <div class="info-label">Nombre:</div>
+                    <div class="info-value">
+                        <span class="highlight">{{nombre}}</span>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Teléfono:</div>
+                    <div class="info-value">
+                        <a href="tel:{{telefono}}" style="color: #2563EB; text-decoration: none; font-weight: 600;">{{telefono}}</a>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Email:</div>
+                    <div class="info-value">
+                        <a href="mailto:{{email}}" style="color: #2563EB; text-decoration: none;">{{email}}</a>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Prefiere llamada:</div>
+                    <div class="info-value">
+                        <strong style="color: #059669;">{{llamar}}</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-block">
+                <h2 style="margin: 0 0 15px 0; color: #1F2937; font-size: 18px;">🔧 Información Técnica</h2>
+                
+                <div class="info-row">
+                    <div class="info-label">Dispositivo:</div>
+                    <div class="info-value">
+                        <span class="highlight">{{dispositivo}}</span>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Marca:</div>
+                    <div class="info-value">
+                        <span class="highlight">{{marca}}</span>
+                    </div>
+                </div>
+                
+                <div class="info-row" style="display: block; border: none;">
+                    <div class="info-label" style="margin-bottom: 10px;">Descripción del Problema:</div>
+                    <div class="problema-box">
+                        {{problema}}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="tel:{{telefono}}" class="btn btn-call">
+                    📞 Llamar a {{nombre}}
+                </a>
+                <a href="mailto:{{email}}?subject=Consulta%20sobre%20{{dispositivo}}%20{{marca}}&body=Hola%20{{nombre}},%0D%0A%0D%0AGracias%20por%20contactarnos..." 
+   class="btn btn-primary">
+    📧 Responder Email
+</a>
+
+<a href="https://wa.me/{{telefono}}?text=Hola%20{{nombre}},%20te%20escribo%20por%20tu%20consulta%20sobre%20{{dispositivo}}%20{{marca}}" 
+   class="btn btn-whatsapp">
+    💬 WhatsApp
+</a>
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>TechRepair.Pro</strong> | Sistema de Gestión de Consultas</p>
+            <p style="margin-top: 10px; font-size: 11px;">
+                Este mensaje fue generado automáticamente desde tu sitio web
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBond PC - Servicio Técnico de Computación en CABA</title>
+    <meta name="description" content="JBond PC - Servicio técnico profesional en CABA. Reparación de PCs, Notebooks, All-in-One, redes inalámbricas y armado de equipos. Presupuesto sin cargo y en el acto, garantía escrita. Cuenca 1200.">
+    <meta name="keywords" content="servicio tecnico caba, reparacion pc buenos aires, reparacion notebooks caba, jbond pc, servicio tecnico a domicilio buenos aires">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="jbond-logo.jpg" type="image/x-icon" sizes="128x128">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "JBond PC - Servicio Técnico CABA",
+      "image": "https://www.jbondpc.com/jbond-logo.jpg",
+      "telephone": "+54 9 11 2388-5563",
+      "email": "leonardobondar87@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cuenca 1200",
+        "addressLocality": "Ciudad Autónoma de Buenos Aires",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "C1416",
+        "addressCountry": "AR"
+      },
+      "openingHours": "Mo-Fr 10:00-19:00, Sa 09:30-14:30",
+      "priceRange": "$$",
+      "areaServed": "Ciudad Autónoma de Buenos Aires",
+      "serviceOffered": [
+        "Servicio técnico de computación",
+        "Reparación de PCs y Notebooks",
+        "Mantenimiento preventivo y reactivo",
+        "Redes inalámbricas",
+        "Armado de equipos a medida"
+      ]
+    }
+    </script>
+</head>
+<body>
+ <h1 class="seo-h1">
+        JBond PC - Servicio técnico de computación, reparación de PCs, Notebooks, redes inalámbricas y armado de equipos en CABA
+    </h1>
+
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h2><span class="logo-text">JBond</span> PC</h2>
+            </div>
+            
+            <nav class="nav" id="nav">
+                <a href="#servicios">Servicios</a>
+                <a href="#marcas">Marcas</a>
+                <a href="#garantia">Garantía</a>
+                <a href="#precios">Precios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+5491123885563" class="btn btn-call">LLAMAR AHORA</a>
+                <a href="https://wa.me/5491123885563?text=Hola,%20necesito%20asistencia%20técnica" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content" data-aos="fade-up" data-aos-delay="100">
+            <div class="badge floating">Servicio técnico en CABA</div>
+            
+            <h2 class="hero-title">REPARAMOS TU PC HOY MISMO</h2>
+            <p class="hero-subtitle">Técnicos especializados • Garantía escrita • Presupuesto SIN CARGO Y EN EL ACTO</p>
+            
+            <div class="hero-usps">
+                <div class="usp">
+                    <div class="usp-icon">🔧</div>
+                    <span>Reparación en 24-48hs</span>
+                </div>
+                <div class="usp">
+                    <div class="usp-icon">✓</div>
+                    <span>Garantía escrita</span>
+                </div>
+                <div class="usp">
+                    <div class="usp-icon">💰</div>
+                    <span>Presupuesto GRATIS y en el acto</span>
+                </div>
+            </div>
+
+            <div class="hero-ctas">
+                <a href="tel:+5491123885563" class="btn btn-primary btn-large">LLAMAR AHORA</a>
+                <button class="btn btn-secondary btn-large" onclick="document.getElementById('presupuesto').scrollIntoView({behavior: 'smooth'})">Pedir Presupuesto</button>
+            </div>
+
+            <div class="timer-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                </svg>
+                <span>Respondemos en menos de 1 hora</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO RÁPIDO -->
+   <section class="quick-form" id="presupuesto" data-aos="fade-up" data-aos-delay="100">
+    <div class="container">
+        <div class="form-card">
+            <h3>CONSEGUÍ TU PRESUPUESTO EN EL ACTO</h3>
+            <form class="quick-form-inline" id="quickForm">
+                <select name="dispositivo" id="dispositivoSelect" required>
+                    <option value="">Tipo de dispositivo</option>
+                    <option value="PC Escritorio">PC Escritorio</option>
+                    <option value="Notebook">Notebook</option>
+                    <option value="All-in-One">All-in-One</option>
+                    <option value="Armado a medida">Armado a medida</option>
+                    <option value="Red inalámbrica">Red inalámbrica</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                
+                <input type="text" id="dispositivoOtro" name="dispositivoOtro" placeholder="¿Qué dispositivo?" style="display: none;">
+                
+                <select name="marca" id="marcaSelect" required>
+                    <option value="">Marca</option>
+                    <option value="HP">HP</option>
+                    <option value="Dell">Dell</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Acer">Acer</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="MSI">MSI</option>
+                    <option value="Ensamblado">Ensamblado</option>
+                    <option value="Otra">Otra</option>
+                </select>
+                
+                <input type="text" id="marcaOtra" name="marcaOtra" placeholder="¿Qué marca?" style="display: none;">
+                
+                <input type="text" name="modelo" placeholder="Modelo (ej: Pavilion 15, Inspiron 14)" required>
+                
+                <input type="text" name="problema" placeholder="Ej: no enciende, pantalla rota, lento..." required>
+                
+                <input type="email" name="email" placeholder="Tu email" required>
+                
+                <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </form>
+            <p class="form-footer">También podés llamarnos o escribirnos por WhatsApp al 011 2388-5563</p>
+        </div>
+    </div>
+</section>
+    <!-- SERVICIOS PRINCIPALES -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">¿Qué Reparamos?</h2>
+            
+            <div class="services-grid" id="servicesGrid">
+                <!-- Se renderiza dinámicamente con JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MARCAS -->
+    <section class="brands" id="marcas">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Trabajamos con Todas las Marcas</h2>
+            
+            <div class="brands-grid">
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">HP</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">Dell</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">Lenovo</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">Asus</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">Acer</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">Apple</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">Samsung</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">MSI</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">Gigabyte</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">Toshiba</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">Intel</div>
+                <div class="brand-item" data-aos="flip-left" data-aos-delay="100">AMD</div>
+            </div>
+            
+            <p class="brands-footer">¿Tu marca no está? Igual trabajamos con ella. Consultanos.</p>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right" data-aos-delay="100">Cómo Funciona</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>CONTACTANOS</h3>
+                        <p>Llamá, escribí por WhatsApp o completá el formulario</p>
+                        <span class="timeline-badge">Te respondemos en menos de 1 hora</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="120">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>DIAGNÓSTICO</h3>
+                        <p>Evaluamos tu equipo sin cargo alguno</p>
+                        <span class="timeline-badge">Presupuesto detallado y transparente</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="140">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>REPARACIÓN</h3>
+                        <p>Autorizás y comenzamos la reparación</p>
+                        <span class="timeline-badge">24-48hs promedio - Te mantenemos informado</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="160">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>ENTREGA + GARANTÍA</h3>
+                        <p>Retirás tu equipo o te lo llevamos</p>
+                        <span class="timeline-badge">Garantía escrita + Factura</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section class="pricing" id="precios">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-left" data-aos-delay="100">Precios Transparentes</h2>
+            
+            <div class="pricing-table-wrapper" data-aos="zoom-in" data-aos-delay="100">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Precio Desde</th>
+                            <th>Tiempo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pricesTableBody">
+                        <!-- Se renderiza dinámicamente con JS -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="pricing-note" data-aos="flip-left" data-aos-delay="100">
+                <p><strong>Presupuestos SIN CARGO.</strong> No cobramos visita ni revisión en CABA.</p>
+                <div class="payment-methods">
+                    <span class="badge-payment">Efectivo</span>
+                    <span class="badge-payment">Transferencia</span>
+                    <span class="badge-payment">Débito</span>
+                    <span class="badge-payment">Crédito</span>
+                    <span class="badge-payment">MercadoPago</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GARANTÍA -->
+    <section class="warranty" id="garantia" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+            <div class="warranty-content">
+                <div class="warranty-icon">🛡️</div>
+                <h2>GARANTÍA EN TODAS LAS REPARACIONES</h2>
+                <ul class="warranty-list">
+                    <li data-aos="fade-right">Todas nuestras reparaciones tienen garantía escrita</li>
+                    <li data-aos="fade-right">Si el mismo problema vuelve, lo arreglamos sin cargo</li>
+                    <li data-aos="fade-right">Usamos repuestos de calidad certificada</li>
+                    <li data-aos="fade-right">Entregamos factura y comprobante</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Por Qué Elegirnos</h2>
+            
+            <div class="why-grid">
+                <div class="why-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="why-icon">⚡</div>
+                    <h3>RAPIDEZ</h3>
+                    <p>Mayoría de reparaciones realizadas en 24-48hs. Servicio express disponible.</p>
+                </div>
+                
+                <div class="why-item" data-aos="zoom-in" data-aos-delay="130">
+                    <div class="why-icon">🏆</div>
+                    <h3>EXPERIENCIA</h3>
+                    <p>Técnicos especializados en hardware y software. Actualizados constantemente.</p>
+                </div>
+                
+                <div class="why-item" data-aos="zoom-in" data-aos-delay="160">
+                    <div class="why-icon">💯</div>
+                    <h3>GARANTÍA</h3>
+                    <p>Garantía escrita en todas las reparaciones. Tu tranquilidad asegurada.</p>
+                </div>
+                
+                <div class="why-item" data-aos="zoom-in" data-aos-delay="190">
+                    <div class="why-icon">🚚</div>
+                    <h3>A DOMICILIO</h3>
+                    <p>Retiramos y entregamos sin cargo en CABA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- URGENCIAS -->
+    <section class="emergency">
+        <div class="container">
+            <div class="emergency-card" data-aos="fade-up" data-aos-delay="100">
+                <h2>¿NECESITÁS REPARACIÓN URGENTE?</h2>
+                <p class="emergency-subtitle">Servicio Express - Reparación en menos de 24hs</p>
+                
+                <div class="emergency-details">
+                    <div class="emergency-item">
+                        <span class="emergency-label">Adicional:</span>
+                        <span class="emergency-value">+30% del presupuesto</span>
+                    </div>
+                    <div class="emergency-item">
+                        <span class="emergency-label">Disponible para:</span>
+                        <span class="emergency-value">PCs, Notebooks, All-in-One</span>
+                    </div>
+                </div>
+                
+                <div class="emergency-actions">
+                    <a href="tel:+5491123885563" class="btn btn-primary btn-large">LLAMAR AL 011 2388-5563</a>
+                    <a href="https://wa.me/5491123885563?text=Necesito%20reparación%20URGENTE" target="_blank" class="btn btn-whatsapp btn-large">WhatsApp Urgencias</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right"  data-aos-delay="100">Lo Que Dicen Nuestros Clientes</h2>
+            
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Me repararon la notebook que no encendía en el día. Excelente atención y precio justo. Los recomiendo 100%."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JP</div>
+                        <div>
+                            <div class="author-name">Juan Pérez</div>
+                            <div class="author-device">Notebook HP Pavilion</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Me armó una PC a medida con mi presupuesto. Me asesoró muy bien y quedó perfecta. Muy profesional."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MG</div>
+                        <div>
+                            <div class="author-name">María González</div>
+                            <div class="author-device">PC armada a medida</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Configuró la red WiFi de mi negocio perfecto. Cobertura en todo el local. Muy rápido y precio accesible."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CR</div>
+                        <div>
+                            <div class="author-name">Carlos Rodríguez</div>
+                            <div class="author-device">Red inalámbrica para negocio</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Preguntas Frecuentes</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>¿Cuánto demora una reparación?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La mayoría de las reparaciones se completan en 24-48hs. Algunas tareas simples como upgrade de RAM o cambio de pasta térmica pueden hacerse en el momento. Para reparaciones más complejas podemos demorar hasta 5 días hábiles.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>¿Cobran el presupuesto?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, el presupuesto es completamente GRATIS y se realiza en el acto. Tampoco cobramos la revisión técnica ni la visita a domicilio en nuestra zona de cobertura.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>¿Qué garantía tienen?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Todas nuestras reparaciones incluyen garantía escrita. Si el mismo problema vuelve a aparecer dentro de ese período, lo reparamos sin cargo adicional.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>¿Usan repuestos originales?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Utilizamos repuestos de alta calidad certificados. Para algunas marcas trabajamos con repuestos originales, y para otras con alternativas de primera línea que cumplen los mismos estándares de calidad.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>¿Cómo puedo pagar?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceptamos efectivo, transferencia bancaria, débito, crédito (hasta 12 cuotas) y MercadoPago. El pago se realiza al momento de la entrega del equipo reparado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Contactanos Ahora</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-method"data-aos="flip-left" data-aos-delay="100">
+                    <div class="contact-icon whatsapp-bg">📱</div>
+                    <h3>WhatsApp</h3>
+                    <p>Chateá con un técnico</p>
+                    <a href="https://wa.me/5491123885563?text=Hola,%20necesito%20asistencia%20técnica" target="_blank" class="btn btn-whatsapp">Enviar mensaje</a>
+                </div>
+                
+                <div class="contact-method"data-aos="flip-left" data-aos-delay="200">
+                    <div class="contact-icon phone-bg">📞</div>
+                    <h3>Teléfono</h3>
+                    <p>Llamanos de 10 a 19hs</p>
+                    <a href="tel:+5491123885563" class="contact-phone">011 2388-5563</a>
+                </div>
+                
+                <div class="contact-method"data-aos="flip-left" data-aos-delay="300">
+                    <div class="contact-icon email-bg">✉️</div>
+                    <h3>Email</h3>
+                    <p>Respondemos en menos de 2hs</p>
+                    <a href="mailto:leonardobondar87@gmail.com" class="contact-email">leonardobondar87@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="contact-form-section">
+    <h3 data-aos="fade-up" data-aos-delay="100">Formulario de Contacto</h3>
+    <form class="contact-form" id="contactForm" data-aos="fade-right" data-aos-delay="250">
+        <div class="form-row">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+        </div>
+        <div class="form-row">
+            <input type="email" name="email" placeholder="Email" required>
+            <select name="dispositivo" id="dispositivoContactSelect" required>
+                <option value="">Tipo de dispositivo</option>
+                <option value="PC Escritorio">PC Escritorio</option>
+                <option value="Notebook">Notebook</option>
+                <option value="All-in-One">All-in-One</option>
+                <option value="Armado a medida">Armado a medida</option>
+                <option value="Red inalámbrica">Red inalámbrica</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+        <input type="text" id="dispositivoContactOtro" name="dispositivoContactOtro" placeholder="¿Qué dispositivo?" style="display: none;" class="otro-input-contact">
+        <select name="marca" id="marcaContactSelect" required>
+            <option value="">Marca</option>
+            <option value="HP">HP</option>
+            <option value="Dell">Dell</option>
+            <option value="Lenovo">Lenovo</option>
+            <option value="Asus">Asus</option>
+            <option value="Acer">Acer</option>
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>
+            <option value="MSI">MSI</option>
+            <option value="Ensamblado">Ensamblado</option>
+            <option value="Otra">Otra</option>
+        </select>
+        <input type="text" id="marcaContactOtra" name="marcaContactOtra" placeholder="¿Qué marca?" style="display: none;" class="otro-input-contact">
+        <input id="modeloInput" type="text" name="modelo" placeholder="Modelo (ej: Pavilion 15, Inspiron 14)" required>
+        <textarea name="problema" rows="4" placeholder="Contanos qué le pasa a tu equipo..." required></textarea>
+        <label class="checkbox-label">
+            <span>Prefiero que me llamen</span>
+            <input type="checkbox" name="llamar">
+        </label>
+        <button type="submit" class="btn btn-primary btn-large">ENVIAR CONSULTA</button>
+    </form>
+</div>
+            
+            <div class="location-section" data-aos="fade-up" data-aos-delay="250">
+                <h3>Ubicación del Local</h3>
+                <div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4!2d-58.46!3d-34.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5722d2a5555%3A0x0!2sCuenca%201200%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+               <div class="location-info">
+                    <div class="location-details">
+                        <p data-aos="fade-right" data-aos-delay="250"><strong>Dirección:</strong> Cuenca 1200, C1416 Ciudad Autónoma de Buenos Aires</p>
+                        <p data-aos="fade-right" data-aos-delay="300"><strong>Horarios:</strong> Lunes a Viernes 10:00-19:00hs | Sábados 9:30-14:30hs | Domingos Cerrado</p>
+                        <p data-aos="fade-right" data-aos-delay="350" class="location-note">Podés traer tu equipo o pedimos que lo retiremos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="seo-text seo-hidden">
+  <div class="container">
+    <h2>Servicio técnico profesional en reparación de PCs y computación en CABA</h2>
+
+    <p>
+      En <strong>JBond PC</strong> brindamos <strong>servicio técnico especializado</strong> en
+      <strong>reparación de PCs de escritorio, Notebooks y All-in-One</strong>,
+      también actualizaciones de todo tipo de equipos, redes inalámbricas y armado de equipos a medida.
+    </p>
+
+    <p>
+      Nuestro equipo cuenta con amplia experiencia en <strong>reparación técnica</strong>,
+      ofreciendo diagnósticos precisos, repuestos de calidad
+      y <strong>garantía escrita</strong> en todos los trabajos realizados.
+    </p>
+
+    <p>
+      Realizamos <strong>servicio técnico en CABA</strong> con atención rápida,
+      <strong>presupuesto sin cargo y en acto</strong> y reparaciones en un plazo promedio de 24 a 48 horas.
+    </p>
+
+    <p>
+      Si buscás un <strong>servicio técnico de computación confiable</strong>, con precios claros y atención profesional,
+      en JBond PC estamos listos para ayudarte.
+    </p>
+  </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>JBond PC - Servicio Técnico</h3>
+                    <p>Especialistas en computación en CABA</p>
+                    <div class="trust-badges">
+                        <span class="trust-badge">✓ Técnicos Especializados</span>
+                        <span class="trust-badge">✓ Garantía escrita</span>
+                        <span class="trust-badge">✓ Presupuesto sin cargo</span>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">PCs de Escritorio</a></li>
+                        <li><a href="#servicios">Notebooks y All-in-One</a></li>
+                        <li><a href="#servicios">Actualizaciones de Hardware</a></li>
+                        <li><a href="#servicios">Redes Inalámbricas</a></li>
+                        <li><a href="#servicios">Armado de Equipos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="tel:+5491123885563">📞 011 2388-5563</a></li>
+                        <li><a href="https://wa.me/5491123885563" target="_blank">💬 WhatsApp</a></li>
+                        <li><a href="mailto:leonardobondar87@gmail.com">✉️ leonardobondar87@gmail.com</a></li>
+                        <li>🕒 Lun-Vie 10-19hs | Sáb 9:30-14:30hs</li>
+                        <li>📍 Cuenca 1200, CABA</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p onclick="event.preventDefault(); openAdminLogin();" style="cursor: pointer;">&copy; 2025 JBond PC - Todos los derechos reservados | Servicio técnico de computación en CABA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="fab-container">
+        <a href="https://wa.me/5491123885563?text=Hola,%20necesito%20asistencia%20técnica" target="_blank" class="fab fab-whatsapp" title="WhatsApp">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+        </a>
+        
+        <a href="tel:+5491123885563" class="fab fab-call" title="Llamar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast"></div>
+
+    <!-- MODAL LOGIN ADMIN -->
+    <div id="adminLoginModal" class="admin-modal">
+        <div class="admin-modal-content">
+            <h2>Acceso Administrador</h2>
+            <input type="password" id="adminPassword" placeholder="Contraseña" onkeypress="if(event.key === 'Enter') adminLogin()">
+            <div class="admin-modal-buttons">
+                <button onclick="adminLogin()" class="btn btn-primary">Ingresar</button>
+                <button onclick="closeAdminLogin()" class="btn btn-secondary">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PANEL ADMIN -->
+    <div id="adminPanel" class="admin-panel">
+        <div class="admin-panel-content">
+            <div class="admin-header">
+                <h2>Panel de Administración</h2>
+                <button onclick="closeAdminPanel()" class="btn-close">✕</button>
+            </div>
+            
+            <div class="admin-body">
+                <!-- GESTIÓN DE SERVICIOS -->
+                <div class="admin-section">
+                    <h3>Gestión de Servicios (¿Qué Reparamos?)</h3>
+                    
+                    <div class="admin-form">
+                        <input type="hidden" id="editServiceId">
+                        <input type="text" id="serviceName" placeholder="Nombre del Servicio (ej: PCS Y NOTEBOOKS)">
+                        <input type="text" id="serviceIcon" placeholder="Ícono (emoji, ej: 🖥️)">
+                        <textarea id="serviceItems" rows="4" placeholder="Items (uno por línea)&#10;Cambio de disco&#10;Formateo e instalación"></textarea>
+                        <input type="number" id="servicePrice" placeholder="Precio desde (número sin puntos)" min="0" max="9999999">
+                        <div class="admin-form-buttons">
+                            <button onclick="saveService()" class="btn btn-primary">Guardar Servicio</button>
+                            <button onclick="cancelEditService()" class="btn btn-secondary">Cancelar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-list" id="servicesList"></div>
+                </div>
+                
+                <!-- GESTIÓN DE PRECIOS -->
+                <div class="admin-section">
+                    <h3>Gestión de Tabla de Precios</h3>
+                    
+                    <div class="admin-form">
+                        <input type="hidden" id="editPriceId">
+                        <input type="text" id="priceService" placeholder="Nombre del Servicio">
+                        <input type="number" id="priceAmount" placeholder="Precio (número sin puntos)" min="0" max="9999999">
+                        <input type="text" id="priceTime" placeholder="Tiempo estimado (ej: 24hs)">
+                        <div class="admin-form-buttons">
+                            <button onclick="savePrice()" class="btn btn-primary">Guardar Precio</button>
+                            <button onclick="cancelEditPrice()" class="btn btn-secondary">Cancelar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-list" id="pricesList"></div>
+                </div>
+                    <button onclick="finalizeEditing()" class="btn" style="background: #10b981; margin-top: 20px;">
+    🎯 FINALIZAR Y ENVIAR TODO
+</button>
+                <!-- CAMBIAR CONTRASEÑA -->
+                <div class="admin-section">
+                    <h3>Cambiar Contraseña</h3>
+                    <div class="admin-form">
+                        <input type="password" id="newPassword" placeholder="Nueva contraseña (mínimo 6 caracteres)">
+                        <input type="password" id="confirmPassword" placeholder="Confirmar contraseña">
+                        <button onclick="changePassword()" class="btn btn-primary">Cambiar Contraseña</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 100
+  });
+</script>
+</body>
+</html>

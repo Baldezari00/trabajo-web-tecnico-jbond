@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 30px;
+        }
+        .alert {
+            background-color: #FEF3C7;
+            border-left: 4px solid #F59E0B;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        .alert strong {
+            color: #D97706;
+            font-size: 14px;
+        }
+        .info-block {
+            background-color: #F9FAFB;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .info-row {
+            display: flex;
+            padding: 12px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            font-weight: 600;
+            color: #374151;
+            min-width: 140px;
+            font-size: 14px;
+        }
+        .info-value {
+            color: #1F2937;
+            font-size: 14px;
+            flex: 1;
+        }
+        .highlight {
+            background-color: #DBEAFE;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #1E40AF;
+        }
+        .footer {
+            background-color: #F3F4F6;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #6B7280;
+        }
+        .cta-buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .btn-primary {
+            background-color: #10B981;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: #6B7280;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔧 Nueva Solicitud de Presupuesto</h1>
+            <p>Formulario Rápido - TechRepair.Pro</p>
+        </div>
+        
+        <div class="content">
+            <div class="alert">
+                <strong>⚡ ACCIÓN REQUERIDA:</strong> Cliente solicitando presupuesto - Responder en menos de 1 hora
+            </div>
+            
+            <div class="info-block">
+                <h2 style="margin: 0 0 15px 0; color: #1F2937; font-size: 18px;">📋 Información del Dispositivo</h2>
+                
+                <div class="info-row">
+                    <div class="info-label">Dispositivo:</div>
+                    <div class="info-value">
+                        <span class="highlight">{{dispositivo}}</span>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Marca:</div>
+                    <div class="info-value">
+                        <span class="highlight">{{marca}}</span>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-label">Problema:</div>
+                    <div class="info-value">{{problema}}</div>
+                </div>
+            </div>
+            
+            <div class="info-block">
+                <h2 style="margin: 0 0 15px 0; color: #1F2937; font-size: 18px;">👤 Datos de Contacto</h2>
+                
+                <div class="info-row">
+                    <div class="info-label">Email:</div>
+                    <div class="info-value">
+                        <a href="mailto:{{email}}" style="color: #2563EB; text-decoration: none;">{{email}}</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+            <a href="mailto:{{email}}?subject=Consulta%20sobre%20{{dispositivo}}%20{{marca}}&body=Hola%20{{nombre}},%0D%0A%0D%0AGracias%20por%20contactarnos..." 
+   class="btn btn-primary">
+    📧 Responder Email
+</a>
+
+       
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>TechRepair.Pro</strong> | Sistema de Gestión de Consultas</p>
+            <p>Recibido: {{current_date}} a las {{current_time}}</p>
+        </div>
+    </div>
+</body>
+</html>
